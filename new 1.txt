@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/>
+		<script defer src="htpps://pyscript.net/latest/pyscript.js"></script>
+		<style>
+			label{
+				display:block;
+				}
+			</style>
+		</head>
+		<body>
+	<py-config>
+		packages = ['numpy']
+	</py-config>
+	<py-script>
+		import numpy as np
+		selection = np.random.randint(0,100,1)[1]
+	</py-script>
+	<form>
+		<label for="guess">Guess:</label><input name="guess" id"guess">
+		
+		<button type="button"
+		<label for="result">Result;</label><div name="result" id="result"></div>
+	</form>
